@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{71B07F25-E5F3-4975-9460-D8E85B9D6F17}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>JCJewellers</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>JCJewellers</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <BuildIpa>true</BuildIpa>
+    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+    <BundleResource Include="Resources\BG.jpg" />
+    <BundleResource Include="Resources\ButtonBottomLeft.png" />
+    <BundleResource Include="Resources\ButtonBottomRight.png" />
+    <BundleResource Include="Resources\ButtonTopLeft.png" />
+    <BundleResource Include="Resources\ButtonTopRight.png" />
+    <BundleResource Include="Resources\JC-Logo.png" />
+    <BundleResource Include="Resources\BlackBackground.png" />
+    <BundleResource Include="Resources\JC-Logo-Footer.png" />
+    <BundleResource Include="Resources\SamplePhoto.png" />
+    <BundleResource Include="Resources\SamplePhoto3.png" />
+    <BundleResource Include="Resources\header.jpg" />
+    <BundleResource Include="Resources\Icon.png" />
+    <BundleResource Include="Resources\Icon%402x.png" />
+    <BundleResource Include="Resources\Icon-60%402x.png" />
+    <BundleResource Include="Resources\FacebookIcon.png" />
+    <BundleResource Include="Resources\MailIcon.png" />
+    <BundleResource Include="Resources\TwitterIcon.png" />
+    <BundleResource Include="Resources\navBg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="JCJewellersViewController.cs" />
+    <Compile Include="JCJewellersViewController.designer.cs">
+      <DependentUpon>JCJewellersViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUsViewController.cs" />
+    <Compile Include="ContactUsViewController.designer.cs">
+      <DependentUpon>ContactUsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryViewController.cs" />
+    <Compile Include="CategoryViewController.designer.cs">
+      <DependentUpon>CategoryViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryCollectionViewController.cs" />
+    <Compile Include="CategoryCollectionViewController.designer.cs">
+      <DependentUpon>CategoryCollectionViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryItemDetailViewController.cs" />
+    <Compile Include="CategoryItemDetailViewController.designer.cs">
+      <DependentUpon>CategoryItemDetailViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemDescriptionViewController.cs" />
+    <Compile Include="ItemDescriptionViewController.designer.cs">
+      <DependentUpon>ItemDescriptionViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryItemDetailTableSource.cs" />
+    <Compile Include="CategoryItemDetailTableCell.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="JCJewellersViewController.xib" />
+    <InterfaceDefinition Include="ContactUsViewController.xib" />
+    <InterfaceDefinition Include="CategoryViewController.xib" />
+    <InterfaceDefinition Include="CategoryCollectionViewController.xib" />
+    <InterfaceDefinition Include="CategoryItemDetailViewController.xib" />
+    <InterfaceDefinition Include="ItemDescriptionViewController.xib" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
